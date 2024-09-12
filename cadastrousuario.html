@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="stylesusuario.css">
+    <script>
+        function exibirAlerta(event) {
+            alert("Dados enviados com sucesso!");
+        }
+    </script>
+    <script>
+        function redirecionarParaOutraPagina() {
+            window.location.href = "index 4.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro do Professor</h2>
+        <form action="#" method="POST" onsubmit="exibirAlerta(event)">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="CPF">CPF:</label>
+                <input type="text" id="CPF" name="CPF" required>
+            </div>
+            <div class="form-group">
+                <label for="RG">RG:</label>
+                <input type="text" id="RG" name="RG" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="E-mail">E-mail:</label>
+                <input type="email" id="E-mail" name="E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="DatadeNacimento">Data de Nacimento:</label>
+                <input type="date" id="DatadeNacimento" name="DatadeNacimento" required>
+            </div>
+            <div class="form-group">
+                <label for="Endereço">Endereço:</label>
+                <input type="text" id="Endereço" name="Endereço" required>
+            </div>
+            <div class="form-group">
+                <label for="Rua">Rua:</label>
+                <input type="text" id="Rua" name="Rua" required>
+            </div>
+            <div class="form-group">
+                <label for="Senha">Senha:</label>
+                <input type="password" id="Senha" name="Senha" required>
+            </div>
+            <div class="form-group">
+                <label for="ConfirmarSenha">Confirmar Senha:</label>
+                <input type="password" id="ConfirmarSenha" name="ConfirmarSenha" required>
+            </div>
+            <div class="form-group">
+                <label for="Observação">Observação:</label>
+                <input type="text" id="Observação" class="Observação" name="Observação" required>
+            </div>
+            <div class="form-group">
+		<button type="button" onclick="redirecionarParaOutraPagina()">Voltar</button>
+                <button type="submit">Cadastrar</button>
+		<button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
